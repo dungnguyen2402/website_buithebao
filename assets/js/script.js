@@ -80,4 +80,20 @@ $(document).ready(function () {
         }
     });
 
+    $(document).ready(function () {
+        // Handle tab click event
+        $('.nav-link').on('click', function (e) {
+            e.preventDefault();
+            // Remove 'active' class from all tabs
+            $('.nav-link').removeClass('active');
+            // Hide all tab content
+            $('.tab-pane').removeClass('show active');
+
+            // Add 'active' class to the clicked tab
+            $(this).addClass('active');
+
+            $($(this).attr('href')).addClass('show active');
+        });
+    });
+
 });
