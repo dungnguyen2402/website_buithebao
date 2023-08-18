@@ -27,6 +27,31 @@
 
 	<!-- Nhúng cndn để chạy carousel -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init('cx33YM9QH5muT__SN');
+		})();
+	</script>
+	<script type="text/javascript">
+		window.onload = function () {
+
+			document.getElementById('contact-form').addEventListener('submit', function (event) {
+
+				event.preventDefault();
+				// generate a five digit number for the contact_number variable
+				// these IDs from the previous steps
+				emailjs.sendForm('service_pfvygk9', 'template_gk5wp2j', this)
+					.then(function () {
+						alert('Gửi thành công');
+						console.log('SUCCESS!');
+					}, function (error) {
+						alert('Gửi k thành công')
+						console.log('FAILED...', error);
+					});
+			});
+		}
+	</script>
 </head>
 
 <body>
@@ -789,7 +814,7 @@
 							<textarea name="message" id="message" rows="5" placeholder="Comment" required=""></textarea>
 						</div>
 						<div class="button-area">
-							<input type="submit" id="send-button" name="submit" class="send-btn" />
+							<input type="submit" id="send-button" name="submit" value="Gửi" class="send-btn" />
 						</div>
 					</form>
 				</div>
@@ -865,29 +890,6 @@
 	</div>
 
 </body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script type="text/javascript">
-	(function () {
-		emailjs.init('qehgc4B46zBgk2fZ7');
-	})();
-</script>
-<script type="text/javascript">
-	window.onload = function () {
-		document.getElementById('contact-form').addEventListener('submit', function (event) {
 
-			event.preventDefault();
-			// generate a five digit number for the contact_number variable
-			// these IDs from the previous steps
-			emailjs.sendForm('service_89nrqum', 'template_956yd3h', this)
-				.then(function () {
-					alert('Gửi thành công');
-					console.log('SUCCESS!');
-				}, function (error) {
-					alert('Gửi k thành công')
-					console.log('FAILED...', error);
-				});
-		});
-	}
-</script>
 
 </html>
