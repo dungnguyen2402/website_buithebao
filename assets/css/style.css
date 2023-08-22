@@ -225,7 +225,7 @@ section .title::after {
 /* home section styling */
 .home {
     display: flex;
-    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("../image/bg2.jpg") no-repeat center;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("../image/2.jpeg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 100vh;
