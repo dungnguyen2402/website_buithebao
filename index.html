@@ -1,508 +1,801 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advertisersmeta.com</title>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Advertisersmeta.com</title>
+    <!-- <link rel="stylesheet" href="./vendor/icons/remixicon.css" /> -->
 
-	<!-- <link rel="stylesheet" href="./vendor/icons/remixicon.css" /> -->
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/theme.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./vendor/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script type="text/javascript" src="./vendor/jquery/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./vendor/typed.js/2.0.11/typed.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./vender/waypoints/4.0.1/jquery.waypoints.min.js"
+    ></script>
+    <script
+      defer
+      src="./vender/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="./vendor/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/app.js"></script>
 
-	<link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="./assets/css/theme.min.css" />
-	<link rel="stylesheet" href="./assets/css/style.css" />
-	<link rel="stylesheet" href="./vendor/font-awesome/5.15.2/css/all.min.css" />
-	<script type="text/javascript" src="./vendor/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="./vendor/typed.js/2.0.11/typed.min.js"></script>
-	<script type="text/javascript" src="./vender/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-	<script defer src="./vender/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	<link rel="stylesheet" href="./vendor/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-	<script src="./assets/js/script.js"></script>
-	<script src="./assets/js/app.js"></script>
+    <meta name="msapplication-TileImage" content="" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/misc/android-icon-192x192.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/misc/android-icon-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./assets/misc/android-icon-192x192.png"
+    />
 
-	<meta name="msapplication-TileImage" content="" />
-	<link rel="icon" type="image/png" href="./assets/misc/android-icon-192x192.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="./assets/misc/android-icon-192x192.png" sizes="192x192" />
-	<link rel="apple-touch-icon" href="./assets/misc/android-icon-192x192.png" />
+    <!-- Nhúng cndn để chạy carousel -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("cx33YM9QH5muT__SN");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            // these IDs from the previous steps
+            emailjs.sendForm("service_pfvygk9", "template_gk5wp2j", this).then(
+              function () {
+                alert("Gửi thành công");
+                console.log("SUCCESS!");
+              },
+              function (error) {
+                alert("Gửi k thành công");
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
+  </head>
 
-	<!-- Nhúng cndn để chạy carousel -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-	<script type="text/javascript">
-		(function () {
-			emailjs.init('cx33YM9QH5muT__SN');
-		})();
-	</script>
-	<script type="text/javascript">
-		window.onload = function () {
+  <body>
+    <div class="scroll-up-btn">
+      <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+      <div class="max-width">
+        <ul class="menu">
+          <li>
+            <a href="index.html" class="menu-btn">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="menu-btn">Information</a>
+          </li>
+          <li>
+            <a href="#section-account" class="menu-btn">Service</a>
+          </li>
 
-			document.getElementById('contact-form').addEventListener('submit', function (event) {
+          <li>
+            <a href="#teams" class="menu-btn">Member</a>
+          </li>
+          <li>
+            <a href="#contact" class="menu-btn">Contact</a>
+          </li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
 
-				event.preventDefault();
-				// generate a five digit number for the contact_number variable
-				// these IDs from the previous steps
-				emailjs.sendForm('service_pfvygk9', 'template_gk5wp2j', this)
-					.then(function () {
-						alert('Gửi thành công');
-						console.log('SUCCESS!');
-					}, function (error) {
-						alert('Gửi k thành công')
-						console.log('FAILED...', error);
-					});
-			});
-		}
-	</script>
-</head>
+    <!-- home section start -->
+    <section class="home" id="home">
+      <div class="max-width">
+        <div class="row">
+          <div class="home-content">
+            <div class="text-1">Hello. I'm :</div>
+            <div class="text-2">
+              Meta Scan
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 512 512"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                  svg {
+                    fill: #0457e7;
+                  }
+                </style>
+                <path
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                />
+              </svg>
+            </div>
+            <div class="text-3">I'm a <span class="typing"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<body>
-	<div class="scroll-up-btn">
-		<i class="fas fa-angle-up"></i>
-	</div>
-	<nav class="navbar">
-		<div class="max-width">
-			
-			<ul class="menu">
-				<li>
-					<a href="index.html" class="menu-btn">Home</a>
-				</li>
-				<li>
-					<a href="#about" class="menu-btn">Information</a>
-				</li>
-				<li>
-					<a href="#section-account" class="menu-btn">Service</a>
-				</li>
-				
-				<li>
-					<a href="#teams" class="menu-btn">Member</a>
-				</li>
-				<li>
-					<a href="#contact" class="menu-btn">Contact</a>
-				</li>
-			</ul>
-			<div class="menu-btn">
-				<i class="fas fa-bars"></i>
-			</div>
-		</div>
-	</nav>
+    <!-- about section start -->
+    <section class="about" id="about">
+      <div class="max-width">
+        <h2 class="title">Information about me</h2>
+        <div class="about-content">
+          <div class="column left">
+            <img
+              src="./assets/image/img-1.png"
+              width="800px"
+              ;
+              height="300px"
+            />
+          </div>
+          <div class="column right">
+            <div class="text">
+              I'm Meta Scan
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 512 512"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                  svg {
+                    fill: #0457e7;
+                  }
+                </style>
+                <path
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                />
+              </svg>
+              <br />
+              <span class="typing-2"></span>
+            </div>
 
-	<!-- home section start -->
-	<section class="home" id="home">
-		<div class="max-width">
-			<div class="row">
-				<div class="home-content">
-					<div class="text-1">Hello. I'm :</div>
-					<div class="text-2" >Meta Scan
-<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#0457e7}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
-					</div>
-					<div class="text-3">I'm a <span class="typing"></span></div>
-				</div>
-			</div>
-		</div>
-	</section>
+            <h3 style="color: Red; font-size: 20px">
+              FACEBOOK ADVERTISING ACCOUNT FOR RENT - ( ACCEPT BH,WH,GH (GAMING,
+              CRYPTO, RECRUITMENT, INVESTMENT,...) , SUPPORT 24/7
+            </h3>
 
-	<!-- about section start -->
-	<section class="about" id="about">
-		<div class="max-width">
-			<h2 class="title">Information about me</h2>
-			<div class="about-content">
-				<div class="column left">
-					<img src="./assets/image/img-1.png" width="800px"; height="300px" />
-				</div>
-				<div class="column right">
-					<div class="text">I'm Meta Scan <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#0457e7}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
-						<br>
-						<span class="typing-2"></span></div>
+            <p></p>
+            <div style="color: blue; font-size: 15px">
+              1. About Service : We provide Full set up for your Facebook Ads
+              Camps
+            </div>
+            - Facebook Ads Account with history spent,high limit,Unlimit
+            resourse for scale up ( quickly change,not have die fee)<br />
+            - FREE VPS (RDP,ADSPOWER,..) (Clean IP) ;<br />
+            - Profile and Page Strong (Old, 5 Star, Successfully
+            Appealed).Quickly change not have fee<br />
+            - Credit cards (set up available in the accounts)<br />
+            - Lots of staff to support 24/7<br />
+            <div style="color: blue">
+              2. Cooperate Policy and Work Process<br />
+            </div>
+            - Accept all advertising products BH,WH,GH (GAMING, CRYPTO,
+            RECRUITMENT, INVESTMENT,...)<br />
+            - We provide account for partners use first,after launch camps and
+            start work,we make payment,we want secure partner comfort with our
+            service before make payment.<br />
+            - Each Partner have 2 supporter online 24/7 to support everything
+            problems.<br />
+            <div style="color: blue">3.Fee of Service<br /></div>
+            - We take fee base total spent of accs depend on the Niches and
+            Scale.<br />
+            - For Regular: 6-10%<br />
+            - For GH,BH: 6-11%<br />
+            - We hasn’t any other fee. Just fee for Account<br />
+            <div style="color: blue">4.Refund Policy<br /></div>
+            - Commit to 100% refund if the partner has a problem and wants to
+            stop the contract. The remaining money after stopping cooperation
+            will be counted and transferred back after 30 mins<br />
+            <div style="color: blue">5.Contact Information<br /></div>
+            <div style="color: red">
+              - Telegram : @metascan
+              <p></p>
+            </div>
 
-					<h3 style="color: Red; font-size: 20px">
-						FACEBOOK ADVERTISING ACCOUNT FOR RENT - ( ACCEPT BH,WH,GH (GAMING, CRYPTO, RECRUITMENT,
-						INVESTMENT,...) , SUPPORT 24/7
-					</h3>
+            <a href="https://t.me/metascanagency" target="_blank"
+              >Read More &nbsp;<i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					<p></p>
-					<div style="color: blue; font-size: 15px">
-						1. About Service : We provide Full set up for your Facebook Ads Camps
-					</div>
-					- Facebook Ads Account with history spent,high limit,Unlimit resourse for scale up ( quickly
-					change,not have die fee)<br />
-					- FREE VPS (RDP,ADSPOWER,..) (Clean IP) ;<br />
-					- Profile and Page Strong (Old, 5 Star, Successfully Appealed).Quickly change not have fee<br />
-					- Credit cards (set up available in the accounts)<br />
-					- Lots of staff to support 24/7<br />
-					<div style="color: blue">2. Cooperate Policy and Work Process<br /></div>
-					- Accept all advertising products BH,WH,GH (GAMING, CRYPTO, RECRUITMENT, INVESTMENT,...)<br />
-					- We provide account for partners use first,after launch camps and start work,we make payment,we
-					want secure partner comfort with our service before make payment.<br />
-					- Each Partner have 2 supporter online 24/7 to support everything problems.<br />
-					<div style="color: blue">3.Fee of Service<br /></div>
-					- We take fee base total spent of accs depend on the Niches and Scale.<br />
-					- For Regular: 6-10%<br />
-					- For GH,BH: 6-11%<br />
-					- We hasn’t any other fee. Just fee for Account<br />
-					<div style="color: blue">4.Refund Policy<br /></div>
-					- Commit to 100% refund if the partner has a problem and wants to stop the contract. The
-					remaining money after stopping cooperation will be counted and transferred back after 30 mins<br />
-					<div style="color: blue">5.Contact Information<br /></div>
-					<div style="color: red">
-						- Telegram : @metascan
-						<p></p>
-					</div>
-					
-					<a href="#">Read More &nbsp;<i class="fas fa-arrow-right"></i></a>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Acount ------------------------ -->
+    <section class="position-relative bg-secondary py-5" id="section-account">
+      <div class="max-width">
+        <div class="container mt-3 pt-md-2 pt-lg-4 pb-2 pb-md-4 pb-lg-5">
+          <h2 class="h1 text-center pb-2 pb-md-0 mb-4 mb-md-5">
+            My services include
+          </h2>
+          <div class="position-relative">
+            <!-- List Account -->
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a
+                  href="#acc-personal"
+                  class="nav-link active"
+                  data-bs-toggle="tab"
+                  role="tab"
+                >
+                  Personal Ads Account
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#acc-bm"
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  role="tab"
+                >
+                  Business Manager
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#acc-fanpage"
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  role="tab"
+                >
+                  Fanpage
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#settings1"
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  role="tab"
+                >
+                  Profile
+                </a>
+              </li>
+            </ul>
 
-  <!-- Acount ------------------------ -->
-	<section class="position-relative bg-secondary py-5" id="section-account">
-		<div class="max-width">
-			<div class="container mt-3 pt-md-2 pt-lg-4 pb-2 pb-md-4 pb-lg-5">
-				<h2 class="h1 text-center pb-2 pb-md-0 mb-4 mb-md-5">My services include</h2>
-				<div class="position-relative">
-					<!-- List Account -->
-					<!-- Nav tabs -->
-					<ul class="nav nav-tabs" role="tablist">
-						<li class="nav-item">
-							<a href="#acc-personal" class="nav-link active" data-bs-toggle="tab" role="tab">
-								Personal Ads Account
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#acc-bm" class="nav-link" data-bs-toggle="tab" role="tab">
-								Business Manager
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#acc-fanpage" class="nav-link" data-bs-toggle="tab" role="tab">
-								Fanpage
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#settings1" class="nav-link" data-bs-toggle="tab" role="tab">
-								Profile
-							</a>
-						</li>
-					</ul>
+            <!-- Tabs content -->
+            <div class="tab-content">
+              <div
+                class="tab-pane fade show active"
+                id="acc-personal"
+                role="tabpanel"
+              >
+                <!-- Persional NEW -->
+                <div class="d-flex justify-content-between flex-wrap mt-4">
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i
+                      >Personal account (new)
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Limit $50</h5>
+                      <p class="card-text fs-sm">
+                        Never used before, with the ability to change time zone
+                        and currency. Can spend up to $50 USD per day. Regular
+                        spending can increase the limit.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i
+                      >Personal account (new)
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Limit $250</h5>
+                      <p class="card-text fs-sm">
+                        Never used before, with the ability to change time zone
+                        and currency. Can spend up to $250 USD per day. Regular
+                        spending can increase the limit.
+                      </p>
+                    </div>
+                  </div>
 
-					<!-- Tabs content -->
-					<div class="tab-content">
-						<div class="tab-pane fade show active" id="acc-personal" role="tabpanel">
-							<!-- Persional NEW -->
-							<div class="d-flex justify-content-between flex-wrap mt-4">
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Personal account (new)
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">Limit $50</h5>
-										<p class="card-text fs-sm">
-											Never used before, with the ability to change time zone and currency. Can
-											spend up to $50 USD per day. Regular spending can increase the limit.
-										</p>
-									</div>
-								</div>
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Personal account (new)
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">Limit $250</h5>
-										<p class="card-text fs-sm">
-											Never used before, with the ability to change time zone and currency. Can
-											spend up to $250 USD per day. Regular spending can increase the limit.
-										</p>
-									</div>
-								</div>
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i
+                      >Personal account (new)
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Limit $1500</h5>
+                      <p class="card-text fs-sm">
+                        Never used before, with the ability to change time zone
+                        and currency. Can spend up to $1500 USD per day.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i
+                      >Personal account (new)
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">No limit</h5>
+                      <p class="card-text fs-sm">
+                        Never used before, with the ability to change time zone
+                        and currency. Can spend from 5000 usd to unlimited per
+                        day.
+                      </p>
+                    </div>
+                  </div>
+                  <!--  -->
+                </div>
+                <!-- Persional OLD -->
+                <div class="d-flex justify-content-between flex-wrap mt-4">
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i
+                      >Personal account (old)
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Limit $50</h5>
+                      <p class="card-text fs-sm">
+                        Used for previous White hat campaigns with many
+                        successful payouts, high reliability and good health.
+                        Can spend up to $50 USD per day. Regular spending can
+                        increase the limit.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i
+                      >Personal account (old)
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Limit $250</h5>
+                      <p class="card-text fs-sm">
+                        Used for previous White hat campaigns with many
+                        successful payouts, high reliability and good health.
+                        Can spend up to $250 USD per day. Regular spending can
+                        increase the limit.
+                      </p>
+                    </div>
+                  </div>
 
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Personal account (new)
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">Limit $1500</h5>
-										<p class="card-text fs-sm">
-											Never used before, with the ability to change time zone and currency. Can
-											spend up to $1500 USD per day.
-										</p>
-									</div>
-								</div>
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Personal account (new)
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">No limit</h5>
-										<p class="card-text fs-sm">
-											Never used before, with the ability to change time zone and currency. Can
-											spend from 5000 usd to unlimited per day.
-										</p>
-									</div>
-								</div>
-								<!--  -->
-							</div>
-							<!-- Persional OLD -->
-							<div class="d-flex justify-content-between flex-wrap mt-4">
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Personal account (old)
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">Limit $50</h5>
-										<p class="card-text fs-sm">
-											Used for previous White hat campaigns with many successful payouts, high
-											reliability and good health. Can spend up to $50 USD per day. Regular
-											spending can increase the limit.
-										</p>
-									</div>
-								</div>
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Personal account (old)
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">Limit $250</h5>
-										<p class="card-text fs-sm">
-											Used for previous White hat campaigns with many successful payouts, high
-											reliability and good health. Can spend up to $250 USD per day. Regular
-											spending can increase the limit.
-										</p>
-									</div>
-								</div>
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i
+                      >Personal account (old)
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Limit $1500</h5>
+                      <p class="card-text fs-sm">
+                        Used for previous White hat campaigns with many
+                        successful payouts, high reliability and good health.
+                        Can spend up to $1500 USD per day.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i
+                      >Personal account (old)
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">No limit</h5>
+                      <p class="card-text fs-sm">
+                        Used for previous White hat campaigns with many
+                        successful payouts, high reliability and good health.
+                        Can spend from 5000 usd to unlimited per day.
+                      </p>
+                    </div>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <div class="tab-pane fade" id="acc-bm" role="tabpanel">
+                <!-- Business Manager (normal) -->
+                <div class="d-flex justify-content-between flex-wrap mt-4">
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i
+                      >Business Manager (normal)
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Limit $50</h5>
+                      <p class="card-text fs-sm">
+                        Created with reputable profiles, good health, long life.
+                        Can spend up to $50 USD per day. Regular spending can
+                        increase the limit.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i
+                      >Business Manager (normal)
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Limit $250</h5>
+                      <p class="card-text fs-sm">
+                        Created with reputable profiles, good health, long life.
+                        Can spend up to $250 USD per day. Regular spending can
+                        increase the limit.
+                      </p>
+                    </div>
+                  </div>
 
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Personal account (old)
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">Limit $1500</h5>
-										<p class="card-text fs-sm">
-											Used for previous White hat campaigns with many successful payouts, high
-											reliability and good health. Can spend up to $1500 USD per day.
-										</p>
-									</div>
-								</div>
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Personal account (old)
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">No limit</h5>
-										<p class="card-text fs-sm">
-											Used for previous White hat campaigns with many successful payouts, high
-											reliability and good health. Can spend from 5000 usd to unlimited per day.
-										</p>
-									</div>
-								</div>
-								<!--  -->
-							</div>
-						</div>
-						<div class="tab-pane fade" id="acc-bm" role="tabpanel">
-							<!-- Business Manager (normal) -->
-							<div class="d-flex justify-content-between flex-wrap mt-4">
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Business Manager
-										(normal)
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">Limit $50</h5>
-										<p class="card-text fs-sm">
-											Created with reputable profiles, good health, long life. Can spend up to $50
-											USD per day. Regular spending can increase the limit.
-										</p>
-									</div>
-								</div>
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Business Manager
-										(normal)
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">Limit $250</h5>
-										<p class="card-text fs-sm">
-											Created with reputable profiles, good health, long life. Can spend up to
-											$250 USD per day. Regular spending can increase the limit.
-										</p>
-									</div>
-								</div>
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i
+                      >Business Manager (normal)
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Limit $1500</h5>
+                      <p class="card-text fs-sm">
+                        Created with reputable profiles, good health, long life.
+                        Can spend up to $1500 USD per day.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i
+                      >Business Manager (normal)
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">No limit</h5>
+                      <p class="card-text fs-sm">
+                        Created with reputable profiles, good health, long life.
+                        Can spend from 5000 usd to unlimited per day.
+                      </p>
+                    </div>
+                  </div>
+                  <!--  -->
+                </div>
+                <!-- Business Manager (verified) -->
+                <div class="d-flex justify-content-between flex-wrap mt-4">
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i
+                      >Business Manager (verified)
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Limit $50</h5>
+                      <p class="card-text fs-sm">
+                        Verified with Facebook and has a "blue mark," extremely
+                        good health, and is great to use for long-term White hat
+                        and Black hat campaigns. Can spend up to $50 USD per
+                        day. Regular spending can increase the limit.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i
+                      >Business Manager (verified)
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Limit $250</h5>
+                      <p class="card-text fs-sm">
+                        Verified with Facebook and has a "blue mark," extremely
+                        good health, and is great to use for long-term White hat
+                        and Black hat campaigns. Can spend up to $250 USD per
+                        day. Regular spending can increase the limit.
+                      </p>
+                    </div>
+                  </div>
 
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Business Manager
-										(normal)
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">Limit $1500</h5>
-										<p class="card-text fs-sm">
-											Created with reputable profiles, good health, long life. Can spend up to
-											$1500 USD per day.
-										</p>
-									</div>
-								</div>
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Business Manager
-										(normal)
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">No limit</h5>
-										<p class="card-text fs-sm">
-											Created with reputable profiles, good health, long life. Can spend from 5000
-											usd to unlimited per day.
-										</p>
-									</div>
-								</div>
-								<!--  -->
-							</div>
-							<!-- Business Manager (verified) -->
-							<div class="d-flex justify-content-between flex-wrap mt-4">
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Business Manager
-										(verified)
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">Limit $50</h5>
-										<p class="card-text fs-sm">
-											Verified with Facebook and has a "blue mark," extremely good health, and is
-											great to use for long-term White hat and Black hat campaigns. Can spend up
-											to $50 USD per day. Regular spending can increase the limit.
-										</p>
-									</div>
-								</div>
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Business Manager
-										(verified)
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">Limit $250</h5>
-										<p class="card-text fs-sm">
-											Verified with Facebook and has a "blue mark," extremely good health, and is
-											great to use for long-term White hat and Black hat campaigns. Can spend up
-											to $250 USD per day. Regular spending can increase the limit.
-										</p>
-									</div>
-								</div>
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i
+                      >Business Manager (verified)
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Limit $1500</h5>
+                      <p class="card-text fs-sm">
+                        Verified with Facebook and has a "blue mark," extremely
+                        good health, and is great to use for long-term White hat
+                        and Black hat campaigns. Can spend up to $1500 USD per
+                        day.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i
+                      >Business Manager (verified)
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">No limit</h5>
+                      <p class="card-text fs-sm">
+                        Verified with Facebook and has a "blue mark," extremely
+                        good health, and is great to use for long-term White hat
+                        and Black hat campaigns. Can spend from 5000 usd to
+                        unlimited per day.
+                      </p>
+                    </div>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <div class="tab-pane fade" id="acc-fanpage" role="tabpanel">
+                <!-- Fanpage -->
+                <div class="d-flex justify-content-between flex-wrap mt-4">
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i
+                      >Fanpage
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">New fanpage</h5>
+                      <p class="card-text fs-sm">
+                        Created on reputable profiles, can be used immediately
+                        and can be renamed, no followers.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i
+                      >Fanpage
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Old fanpage</h5>
+                      <p class="card-text fs-sm">
+                        Created a long time ago and has long-standing posts, has
+                        a real following.
+                      </p>
+                    </div>
+                  </div>
 
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Business Manager
-										(verified)
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">Limit $1500</h5>
-										<p class="card-text fs-sm">
-											Verified with Facebook and has a "blue mark," extremely good health, and is
-											great to use for long-term White hat and Black hat campaigns. Can spend up
-											to $1500 USD per day.
-										</p>
-									</div>
-								</div>
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Business Manager
-										(verified)
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">No limit</h5>
-										<p class="card-text fs-sm">
-											Verified with Facebook and has a "blue mark," extremely good health, and is
-											great to use for long-term White hat and Black hat campaigns. Can spend from
-											5000 usd to unlimited per day.
-										</p>
-									</div>
-								</div>
-								<!--  -->
-							</div>
-						</div>
-						<div class="tab-pane fade" id="acc-fanpage" role="tabpanel">
-							<!-- Fanpage -->
-							<div class="d-flex justify-content-between flex-wrap mt-4">
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Fanpage
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">New fanpage</h5>
-										<p class="card-text fs-sm">
-											Created on reputable profiles, can be used immediately and can be renamed,
-											no followers.
-										</p>
-									</div>
-								</div>
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Fanpage
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">Old fanpage</h5>
-										<p class="card-text fs-sm">
-											Created a long time ago and has long-standing posts, has a real following.
-										</p>
-									</div>
-								</div>
+                  <!-- Secondary card -->
+                  <div
+                    class="card card-hover bg-secondary me-sm-4 mb-4"
+                    style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    "
+                  >
+                    <div class="card-header">
+                      <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>
+                      Fanpage
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Verified fanpage</h5>
+                      <p class="card-text fs-sm">
+                        Verified with Facebook and has a "blue mark," extremely
+                        good health.
+                      </p>
+                    </div>
+                  </div>
 
-								<!-- Secondary card -->
-								<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-									<div class="card-header">
-										<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>
-										Fanpage
-									</div>
-									<div class="card-body">
-										<h5 class="card-title">Verified fanpage</h5>
-										<p class="card-text fs-sm">
-											Verified with Facebook and has a "blue mark," extremely good health.
-										</p>
-									</div>
-								</div>
+                  <!--  -->
+                </div>
+              </div>
+              <div class="tab-pane fade" id="settings1" role="tabpanel">
+                <!-- Secondary card -->
+                <div
+                  class="card card-hover bg-secondary me-sm-4 mb-4"
+                  style="
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                    flex-basis: 0;
+                    min-width: 200px;
+                  "
+                >
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>
+                    Profile
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Profile</h5>
+                    <p class="card-text fs-sm">
+                      Crafted and cared for by us, in good health, verified for
+                      instant advertising use.
+                    </p>
+                  </div>
+                </div>
 
-								<!--  -->
-							</div>
-						</div>
-						<div class="tab-pane fade" id="settings1" role="tabpanel">
-							<!-- Secondary card -->
-							<div class="card card-hover bg-secondary me-sm-4 mb-4" style="flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 200px">
-								<div class="card-header">
-									<i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>
-									Profile
-								</div>
-								<div class="card-body">
-									<h5 class="card-title">Profile</h5>
-									<p class="card-text fs-sm">
-										Crafted and cared for by us, in good health, verified for instant advertising
-										use.
-									</p>
-								</div>
-							</div>
+                <!--  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-							<!--  -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- services section start 
+    <!-- services section start 
 	<section class="services" id="services">
 		<div class="max-width">
 			<h2 class="title">My Services</h2>
@@ -550,7 +843,7 @@
 		</div>
 	</section>
 -->
-	<!-- skills section start 
+    <!-- skills section start 
 	<section class="skills" id="skills">
 		<div class="max-width">
 			<h2 class="title">Skill</h2>
@@ -617,265 +910,412 @@
 		</div>
 	</section>
 -->
-	<!-- teams section start -->
-	
-	<!-- Features------------------------------------------------ -->
-	<section id="features" class="container pt-5 pt-lg-2 pt-xl-5 pb-3 mt-n2 mt-sm-0 mb-2 mb-md-4">
-		<div class="max-width">
-			<div class="row pb-xl-3 pt-5">
-				<!-- Parallax gfx -->
-				<div class="col-lg-5 d-none d-lg-block">
-					<div class="position-relative" style="max-width: 968px">
-						<img src="./assets/image/facebook.png" alt="Premium" style="max-width: 968px; margin-left: -180px; margin-top: -100px" />
-					</div>
-				</div>
+    <!-- teams section start -->
 
-				<!-- Feature list -->
-				<div class="col-lg-7" id="section-2">
-					
+    <!-- Features------------------------------------------------ -->
+    <section
+      id="features"
+      class="container pt-5 pt-lg-2 pt-xl-5 pb-3 mt-n2 mt-sm-0 mb-2 mb-md-4"
+    >
+      <div class="max-width">
+        <div class="row pb-xl-3 pt-5">
+          <!-- Parallax gfx -->
+          <div class="col-lg-5 d-none d-lg-block">
+            <div class="position-relative" style="max-width: 968px">
+              <img
+                src="./assets/image/facebook.png"
+                alt="Premium"
+                style="
+                  max-width: 968px;
+                  margin-left: -180px;
+                  margin-top: -100px;
+                "
+              />
+            </div>
+          </div>
 
-					<div class="typed-animation">
-						<h2 class="h1 text-center text-md-start mb-4 typed-out">
-							<span class="typing-3"></span>
-						</h2>
-					</div>
+          <!-- Feature list -->
+          <div class="col-lg-7" id="section-2">
+            <div class="typed-animation">
+              <h2 class="h1 text-center text-md-start mb-4 typed-out">
+                <span class="typing-3"></span>
+              </h2>
+            </div>
 
-					<p class="fs-lg text-muted text-center text-md-start mb-4 mb-xl-5">
-						Facebook is gradually changing and it is more difficult and affects each business's Advertising.
-						We have many years of advertising experience and have many ways to overcome all difficulties
-						when customers advertise.
-					</p>
-					<div class="row row-cols-1 row-cols-sm-2 pt-2 pt-sm-3 pt-xl-2">
-						<!-- Item -->
-						<div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
-							<div class="d-flex align-items-start pe-xl-3">
-								<div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
-									<img src="./assets/image/happy.svg" alt="Icon" />
-								</div>
-								<div class="ps-4 ps-sm-3 ps-md-4">
-									<h3 class="h5 pb-1 mb-2">All Product</h3>
-									<p class="mb-0">Allow all White hat, light Grey hat products.</p>
-								</div>
-							</div>
-						</div>
+            <p class="fs-lg text-muted text-center text-md-start mb-4 mb-xl-5">
+              Facebook is gradually changing and it is more difficult and
+              affects each business's Advertising. We have many years of
+              advertising experience and have many ways to overcome all
+              difficulties when customers advertise.
+            </p>
+            <div class="row row-cols-1 row-cols-sm-2 pt-2 pt-sm-3 pt-xl-2">
+              <!-- Item -->
+              <div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
+                <div class="d-flex align-items-start pe-xl-3">
+                  <div
+                    class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3"
+                  >
+                    <img src="./assets/image/happy.svg" alt="Icon" />
+                  </div>
+                  <div class="ps-4 ps-sm-3 ps-md-4">
+                    <h3 class="h5 pb-1 mb-2">All Product</h3>
+                    <p class="mb-0">
+                      Allow all White hat, light Grey hat products.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-						<!-- Item -->
-						<div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
-							<div class="d-flex align-items-start ps-xl-3">
-								<div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
-									<img src="./assets/image/cashback.svg" alt="Icon" />
-								</div>
-								<div class="ps-4 ps-sm-3 ps-md-4">
-									<h3 class="h5 pb-1 mb-2">Refund</h3>
-									<p class="mb-0">
-										We will refund amount left when you want stop work with our ads account.
-									</p>
-								</div>
-							</div>
-						</div>
+              <!-- Item -->
+              <div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
+                <div class="d-flex align-items-start ps-xl-3">
+                  <div
+                    class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3"
+                  >
+                    <img src="./assets/image/cashback.svg" alt="Icon" />
+                  </div>
+                  <div class="ps-4 ps-sm-3 ps-md-4">
+                    <h3 class="h5 pb-1 mb-2">Refund</h3>
+                    <p class="mb-0">
+                      We will refund amount left when you want stop work with
+                      our ads account.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-						<!-- Item -->
-						<div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
-							<div class="d-flex align-items-start pe-xl-3">
-								<div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
-									<img src="./assets/image/statistics.svg" alt="Icon" />
-								</div>
-								<div class="ps-4 ps-sm-3 ps-md-4">
-									<h3 class="h5 pb-1 mb-2">VAT</h3>
-									<p class="mb-0">ZERO %VAT.</p>
-								</div>
-							</div>
-						</div>
+              <!-- Item -->
+              <div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
+                <div class="d-flex align-items-start pe-xl-3">
+                  <div
+                    class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3"
+                  >
+                    <img src="./assets/image/statistics.svg" alt="Icon" />
+                  </div>
+                  <div class="ps-4 ps-sm-3 ps-md-4">
+                    <h3 class="h5 pb-1 mb-2">VAT</h3>
+                    <p class="mb-0">ZERO %VAT.</p>
+                  </div>
+                </div>
+              </div>
 
-						<!-- Item -->
-						<div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
-							<div class="d-flex align-items-start ps-xl-3">
-								<div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
-									<img src="./assets/image/payments.svg" alt="Icon" />
-								</div>
-								<div class="ps-4 ps-sm-3 ps-md-4">
-									<h3 class="h5 pb-1 mb-2">Unlimited</h3>
-									<p class="mb-0">Unlimited spending right after initialization.</p>
-								</div>
-							</div>
-						</div>
+              <!-- Item -->
+              <div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
+                <div class="d-flex align-items-start ps-xl-3">
+                  <div
+                    class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3"
+                  >
+                    <img src="./assets/image/payments.svg" alt="Icon" />
+                  </div>
+                  <div class="ps-4 ps-sm-3 ps-md-4">
+                    <h3 class="h5 pb-1 mb-2">Unlimited</h3>
+                    <p class="mb-0">
+                      Unlimited spending right after initialization.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-						<!-- Item -->
-						<div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
-							<div class="d-flex align-items-start pe-xl-3">
-								<div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
-									<img src="./assets/image/security.svg" alt="Icon" />
-								</div>
-								<div class="ps-4 ps-sm-3 ps-md-4">
-									<h3 class="h5 pb-1 mb-2">Security</h3>
-									<p class="mb-0">Campaign security, quick top up.</p>
-								</div>
-							</div>
-						</div>
+              <!-- Item -->
+              <div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
+                <div class="d-flex align-items-start pe-xl-3">
+                  <div
+                    class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3"
+                  >
+                    <img src="./assets/image/security.svg" alt="Icon" />
+                  </div>
+                  <div class="ps-4 ps-sm-3 ps-md-4">
+                    <h3 class="h5 pb-1 mb-2">Security</h3>
+                    <p class="mb-0">Campaign security, quick top up.</p>
+                  </div>
+                </div>
+              </div>
 
-						<!-- Item -->
-						<div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
-							<div class="d-flex align-items-start ps-xl-3">
-								<div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
-									<img src="./assets/image/support.svg" alt="Icon" />
-								</div>
-								<div class="ps-4 ps-sm-3 ps-md-4">
-									<h3 class="h5 pb-1 mb-2">Contract</h3>
-									<p class="mb-0">Free fanpage appeal, have business contract.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+              <!-- Item -->
+              <div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
+                <div class="d-flex align-items-start ps-xl-3">
+                  <div
+                    class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3"
+                  >
+                    <img src="./assets/image/support.svg" alt="Icon" />
+                  </div>
+                  <div class="ps-4 ps-sm-3 ps-md-4">
+                    <h3 class="h5 pb-1 mb-2">Contract</h3>
+                    <p class="mb-0">
+                      Free fanpage appeal, have business contract.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<section class="teams" id="teams">
-		<div class="max-width">
-			<h2 class="title">Team Member</h2>
-			<div class="carousel owl-carousel">
-				<div class="card">
-					<div class="box">
-						<a href="https://t.me/+jgt5muncKCgxOTNl"><img src="./assets/image/3.jpg" alt=""></a>
-						<div class="text"style="font-family:Serif ;">Meta Scan <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#0457e7}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></div><i class="fa-solid fa-circle-check"></i>
-						<a href="https://t.me/+jgt5muncKCgxOTNl"></a>
-					</div>
-				</div>
-				<div class="card">
-					<div class="box">
-						<a href="https://t.me/+jgt5muncKCgxOTNl"> <img src="./assets/image/3.jpg" alt=""></a>
-						<div class="text" >Dragon Dragon <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#0457e7}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></div>
-						<a href="https://t.me/+jgt5muncKCgxOTNl"></a>
-					</div>
-				</div>
-				<div class="card">
-					<div class="box">
-						<a href="https://t.me/+jgt5muncKCgxOTNl"><img src="./assets/image/3.jpg" alt=""></a>
-						<div class="text"style="font-family:Serif ;">Stupid Boy <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#0457e7}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></div>
-						<a href="https://t.me/+jgt5muncKCgxOTNl"></a>
-					</div>
-				</div>
+    <section class="teams" id="teams">
+      <div class="max-width">
+        <h2 class="title">Team Member</h2>
+        <div class="carousel owl-carousel">
+          <div class="card">
+            <div class="box">
+              <a href="https://t.me/+jgt5muncKCgxOTNl"
+                ><img src="./assets/image/3.jpg" alt=""
+              /></a>
+              <div class="text" style="font-family: Serif">
+                Meta Scan
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <style>
+                    svg {
+                      fill: #0457e7;
+                    }
+                  </style>
+                  <path
+                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                  />
+                </svg>
+              </div>
+              <i class="fa-solid fa-circle-check"></i>
+              <a href="https://t.me/+jgt5muncKCgxOTNl"></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <a href="https://t.me/+jgt5muncKCgxOTNl">
+                <img src="./assets/image/3.jpg" alt=""
+              /></a>
+              <div class="text">
+                Dragon Dragon
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <style>
+                    svg {
+                      fill: #0457e7;
+                    }
+                  </style>
+                  <path
+                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                  />
+                </svg>
+              </div>
+              <a href="https://t.me/+jgt5muncKCgxOTNl"></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <a href="https://t.me/+jgt5muncKCgxOTNl"
+                ><img src="./assets/image/3.jpg" alt=""
+              /></a>
+              <div class="text" style="font-family: Serif">
+                Stupid Boy
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <style>
+                    svg {
+                      fill: #0457e7;
+                    }
+                  </style>
+                  <path
+                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                  />
+                </svg>
+              </div>
+              <a href="https://t.me/+jgt5muncKCgxOTNl"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			</div>
-		</div>
-	</section>
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+      <div class="max-width">
+        <h2 class="title">Contact me</h2>
+        <div class="contact-content">
+          <div class="column left">
+            <div class="text">Get in Touch</div>
+            <p>
+              What are you wondering? Please leave information.<br />
+              We will contact you.
+            </p>
+            <div class="icons">
+              <div class="row">
+                <i class="fas fa-user"></i>
+                <div class="info">
+                  <div class="head">My name is:</div>
+                  <div class="sub-title">
+                    Meta Scan
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 512 512"
+                    >
+                      <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <style>
+                        svg {
+                          fill: #0457e7;
+                        }
+                      </style>
+                      <path
+                        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="info" style="width: auto !important">
+                  <div class="head">Address:</div>
+                  <div class="sub-title">Ha Noi , Viet Nam</div>
+                </div>
+              </div>
+              <div class="row">
+                <i class="fas fa-envelope"></i>
+                <div class="info">
+                  <div class="head">Email</div>
+                  <div class="sub-title">doanduclong26032000@gmail.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="column right">
+            <div class="text">Message me !</div>
+            <form class="contact" id="contact-form" method="post">
+              <div class="fields">
+                <div class="field name">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="text-box"
+                    placeholder="Name"
+                    required=""
+                  />
+                </div>
+                <div class="field email">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="text-box"
+                    placeholder="Email"
+                    required=""
+                  />
+                </div>
+              </div>
+              <div class="field textarea">
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="5"
+                  placeholder="Comment"
+                  required=""
+                ></textarea>
+              </div>
+              <div class="button-area">
+                <input
+                  type="submit"
+                  id="send-button"
+                  name="submit"
+                  value="Gửi"
+                  class="send-btn"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="float-contact">
+      <button class="chat-zalo">
+        <a href="https://t.me/+jgt5muncKCgxOTNl">Telegram</a>
+      </button>
+      <button class="chat-face">
+        <a href="https://www.facebook.com/Emyeu2502">Facebook</a>
+      </button>
+    </div>
 
-	<!-- contact section start -->
-	<section class="contact" id="contact">
-		<div class="max-width">
-			<h2 class="title">Contact me</h2>
-			<div class="contact-content">
-				<div class="column left">
-					<div class="text">Get in Touch</div>
-					<p>
-						What are you wondering? Please leave information.<br />
-						We will contact you.
-					</p>
-					<div class="icons">
-						<div class="row">
-							<i class="fas fa-user"></i>
-							<div class="info">
-								<div class="head">My name is:</div>
-								<div class="sub-title">Meta Scan <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#0457e7}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg></div>
-							</div>
-						</div>
-						<div class="row">
-							<i class="fas fa-map-marker-alt"></i>
-							<div class="info" style="width: auto !important;">
-								<div class="head">Address:</div>
-								<div class="sub-title">Ha Noi , Viet Nam</div>
-							</div>
-						</div>
-						<div class="row">
-							<i class="fas fa-envelope"></i>
-							<div class="info">
-								<div class="head">Email</div>
-								<div class="sub-title">doanduclong26032000@gmail.com</div>
-							</div>
-						</div>
-					</div>
-				</div>
+    <!-- footer section start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row-btn">
+          <div class="footer-col">
+            <h4>Contact me</h4>
 
-				<div class="column right">
-					<div class="text">Message me !</div>
-					<form class="contact" id="contact-form" method="post">
-						<div class="fields">
-							<div class="field name">
-								<input type="text" id="name" name="name" class="text-box" placeholder="Name" required="" />
-							</div>
-							<div class="field email">
-								<input type="email" id="email" name="email" class="text-box" placeholder="Email" required="" />
-							</div>
-						</div>
-						<div class="field textarea">
-							<textarea name="message" id="message" rows="5" placeholder="Comment" required=""></textarea>
-						</div>
-						<div class="button-area">
-							<input type="submit" id="send-button" name="submit" value="Gửi" class="send-btn" />
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
-	<div class="float-contact">
-		<button class="chat-zalo">
-			<a href="https://t.me/+jgt5muncKCgxOTNl">Telegram</a>
-		</button>
-		<button class="chat-face">
-			<a href="https://www.facebook.com/Emyeu2502">Facebook</a>
-		</button>
-	
-	</div>
+            <ul>
+              <li><a href="#">Website: </a></li>
 
-	<!-- footer section start -->
-	<footer class="footer">
-		<div class="container">
-			<div class="row-btn">
-				<div class="footer-col">
-					<h4>Contact me</h4>
-
-					<ul>
-						<li><a href="#">Website: </a></li>
-						
-						<li>
-							<a href="#"><i class="fas fa-envelope" style="font-size: 25px; color: #fff"></i>&nbsp; :
-								doanduclong26032000@gmail.com</a>
-						</li>
-						<li>
-							<a href="#"><i class="fas fa-map-marker-alt" style="font-size: 25px; color: #fff"></i>
-								&nbsp; Hà Nội - Việt Nam</a>
-						</li>
-					</ul>
-				</div>
-				<div class="footer-col">
-					<h4>Customer support</h4>
-					<ul>
-						<li><a href="https://t.me/+jgt5muncKCgxOTNl">Telegram</a></li>
-						<li><a href="https://www.facebook.com/Emyeu2502">Facebook</a></li>
-						<li><a href="https://t.me/+jgt5muncKCgxOTNl">Gmail</a></li>
-					</ul>
-				</div>
-				<div class="footer-col">
-					<h4>Map</h4>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29793.98045312467!2d105.81636411320913!3d21.022778419220725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1692621092380!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<div class="footer-col">
-					<h4>follow us</h4>
-					<div class="social-links">
-						<a href="https://www.facebook.com/Emyeu2502/"><i class="fab fa-facebook-f"></i></a>
-						<a href="https://t.me/+jgt5muncKCgxOTNl"><i class="fab fa-brands fa-telegram"></i></a>
-						<a href="https://t.me/+jgt5muncKCgxOTNl"><i class="fab fa-instagram"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-
-</body>
-
-
+              <li>
+                <a href="#"
+                  ><i
+                    class="fas fa-envelope"
+                    style="font-size: 25px; color: #fff"
+                  ></i
+                  >&nbsp; : doanduclong26032000@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i
+                    class="fas fa-map-marker-alt"
+                    style="font-size: 25px; color: #fff"
+                  ></i>
+                  &nbsp; Hà Nội - Việt Nam</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Customer support</h4>
+            <ul>
+              <li><a href="https://t.me/+jgt5muncKCgxOTNl">Telegram</a></li>
+              <li><a href="https://www.facebook.com/Emyeu2502">Facebook</a></li>
+              <li><a href="https://t.me/+jgt5muncKCgxOTNl">Gmail</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Map</h4>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29793.98045312467!2d105.81636411320913!3d21.022778419220725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1692621092380!5m2!1svi!2s"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/Emyeu2502/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://t.me/+jgt5muncKCgxOTNl"
+                ><i class="fab fa-brands fa-telegram"></i
+              ></a>
+              <a href="https://t.me/+jgt5muncKCgxOTNl"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
