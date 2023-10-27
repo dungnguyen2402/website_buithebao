@@ -1,0 +1,1955 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode" style="outline: none">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <title>Premium Agency</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Premium Agency - Facebook Ads Account" />
+  <meta name="keywords" content="ads, ads account, premium agency, premium facebook" />
+  <meta name="author" content="Premium Agency" />
+
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Favicon and Touch Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <!-- <link rel="mask-icon" href="safari-pinned-tab.svg" color="#6366f1" /> -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <meta name="msapplication-TileColor" content="#080032" />
+  <meta name="msapplication-config" content="assets/favicon/browserconfig.xml" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Vendor Styles -->
+  <link rel="stylesheet" media="screen" href="./Premiumagencyweb_files/boxicons.min.css" />
+  <link rel="stylesheet" media="screen" href="./Premiumagencyweb_files/swiper-bundle.min.css" />
+
+  <!-- Main Theme Styles + Bootstrap -->
+  <link rel="stylesheet" media="screen" href="./Premiumagencyweb_files/theme.min.css" />
+  <link href="boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <!-- Page loading styles -->
+
+  <style>
+    /* Animation */
+
+    .typed-animation {
+      display: inline-block;
+    }
+
+    .typed-out {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 0.25rem solid #fff;
+      font-size: 3rem;
+      font-weight: 900;
+      animation: typing 8s steps(40) infinite, blinking 1s infinite;
+    }
+
+    @keyframes typing {
+
+      0%,
+      100% {
+        width: 0;
+      }
+
+      50%,
+      90% {
+        width: 100%;
+      }
+    }
+
+    @keyframes blinking {
+
+      0%,
+      100% {
+        border-color: transparent;
+      }
+
+      50% {
+        border-color: #fff;
+      }
+    }
+
+    spantype {
+      border-right: 0.09em solid;
+      animation: caret 1s steps(1) infinite;
+    }
+
+    @keyframes caret {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    /* ======================================================= */
+
+    .page-loading {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all 0.4s 0.2s ease-in-out;
+      transition: all 0.4s 0.2s ease-in-out;
+      background-color: #fff;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 9999;
+    }
+
+    .dark-mode .page-loading {
+      background-color: #0b0f19;
+    }
+
+    .page-loading.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .page-loading-inner {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: opacity 0.2s ease-in-out;
+      transition: opacity 0.2s ease-in-out;
+      opacity: 0;
+    }
+
+    .page-loading.active>.page-loading-inner {
+      opacity: 1;
+    }
+
+    .page-loading-inner>span {
+      display: block;
+      font-size: 1rem;
+      font-weight: normal;
+      color: #9397ad;
+    }
+
+    .dark-mode .page-loading-inner>span {
+      color: #fff;
+      opacity: 0.6;
+    }
+
+    .page-spinner {
+      display: inline-block;
+      width: 2.75rem;
+      height: 2.75rem;
+      margin-bottom: 0.75rem;
+      vertical-align: text-bottom;
+      border: 0.15em solid #b4b7c9;
+      border-right-color: transparent;
+      border-radius: 50%;
+      -webkit-animation: spinner 0.75s linear infinite;
+      animation: spinner 0.75s linear infinite;
+    }
+
+    .dark-mode .page-spinner {
+      border-color: rgba(255, 255, 255, 0.4);
+      border-right-color: transparent;
+    }
+
+    @-webkit-keyframes spinner {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spinner {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      var dataText = [
+        "Rental Facebook AD Accounts Services",
+        "Rental Facebook AD Accounts Services",
+        "Rental Facebook AD Accounts Services",
+        "Rental Facebook AD Accounts Services",
+      ];
+
+      function typeWriter(text, i, fnCallback) {
+        if (i < text.length) {
+          document.querySelector("typing").innerHTML =
+            text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+
+          setTimeout(function () {
+            typeWriter(text, i + 1, fnCallback);
+          }, 100);
+        } else if (typeof fnCallback == "function") {
+          setTimeout(fnCallback, 700);
+        }
+      }
+      function StartTextAnimation(i) {
+        if (typeof dataText[i] == "undefined") {
+          setTimeout(function () {
+            StartTextAnimation(0);
+          }, 20000);
+        }
+        if (i < dataText[i].length) {
+          typeWriter(dataText[i], 0, function () {
+            StartTextAnimation(i + 1);
+          });
+        }
+      }
+      StartTextAnimation(0);
+    });
+  </script>
+
+  <!-- Theme mode -->
+  <script type="text/javascript" async="" src="./Premiumagencyweb_files/js.js"></script>
+
+  <script async="" src="./Premiumagencyweb_files/gtm.js"></script>
+  <script>
+    let mode = window.localStorage.getItem("mode"),
+      root = document.getElementsByTagName("html")[0];
+    if (mode !== undefined && mode === "dark") {
+      root.classList.add("dark-mode");
+    } else {
+      root.classList.remove("dark-mode");
+    }
+  </script>
+
+  <!-- Page loading scripts -->
+  <script>
+    (function () {
+      window.onload = function () {
+        const preloader = document.querySelector(".page-loading");
+        preloader.classList.remove("active");
+        setTimeout(function () {
+          preloader.remove();
+        }, 1000);
+      };
+    })();
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KHBN2ZBJ09"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KHBN2ZBJ09");
+  </script>
+  <script src="jquery-3.6.0.min.js"></script>
+</head>
+
+<!-- Body -->
+
+<body>
+  <!-- Page loading spinner -->
+  <!-- Page wrapper for sticky footer -->
+  <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+  <main class="page-wrapper">
+    <!-- Navbar -->
+    <header class="header navbar navbar-expand-lg position-absolute navbar-sticky">
+      <div class="container px-3">
+        <a href="index.html" class="navbar-brand pe-3">
+          <img src="./svg/Premium-Agency-logo.svg" width="128" alt="Premium Agency" />
+        </a>
+        <div id="navbarNav" class="offcanvas offcanvas-end">
+          <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="#section-home" class="nav-link" data-scroll data-scroll-offset="0">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#section-account" class="nav-link" data-scroll data-scroll-offset="60">Account</a>
+              </li>
+              <li class="nav-item">
+                <a href="#section-process" class="nav-link" data-scroll data-scroll-offset="60">Process</a>
+              </li>
+              <li class="nav-item">
+                <a href="#section-faq" class="nav-link" data-scroll data-scroll-offset="30">Questions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="offcanvas-header border-top">
+            <a href="contact.html" class="btn btn-primary w-100" data-scroll data-scroll-offset="120">
+              <i class="bx bx-chat fs-4 lh-1 me-1"></i>
+              &nbsp;Contact us
+            </a>
+          </div>
+        </div>
+        <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+          <input type="checkbox" class="form-check-input" id="theme-mode" checked />
+          <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+          <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+        </div>
+        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="selectlang d-none d-lg-block" style="min-width: 105px">
+          <a href="#"><img src="./images/united-kingdom.png" alt="US"
+              style="height: 32px; margin-right: 10px; display: inline-block" /></a>
+          <a href="https://cn.premiumagency.asia"><img src="./images/china.png" alt="US"
+              style="height: 34px; margin-right: 25px; display: inline-block" /></a>
+        </div>
+        <a href="contact.html" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" data-scroll
+          data-scroll-offset="120">
+          <i class="bx bx-chat fs-5 lh-1 me-1"></i>
+          &nbsp;Contacts us
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="section-home" class="overflow-hidden pt-5" style="
+          background: radial-gradient(
+            116.18% 118% at 50% 100%,
+            rgba(99, 102, 241, 0.1) 0%,
+            rgba(218, 70, 239, 0.05) 41.83%,
+            rgba(241, 244, 253, 0.07) 82.52%
+          );
+        ">
+      <div class="container pt-3 pt-sm-4 pt-xl-5">
+        <div class="row pt-md-2 pt-lg-5">
+          <div class="col-md-5 d-flex flex-column mt-md-4 pt-5 pb-3 pb-sm-4 py-md-5">
+            <h1 class="display-4 text-center text-md-start mb-4" style="display: block; min-height: 220px">
+              <spantype>
+                <typing>Rental Facebook AD Accounts Services</typing>
+              </spantype>
+            </h1>
+
+            <p class="fs-lg text-center text-md-start pb-2 pb-md-3 mb-3 mb-lg-3">
+              Premium Agency specializes in providing a premium advertising
+              format on Facebook.
+            </p>
+            <h3 class="fs-lg text-center text-md-start pb-1 pb-md-1 mb-1 mb-lg-1">
+              Rating
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 3 24 24"
+                style="fill: rgba(255, 213, 65, 1)">
+                <path
+                  d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                </path>
+              </svg>
+              4.8
+            </h3>
+            <p class="fs-lg text-center text-md-start pb-1 pb-md-1 mb-1 mb-lg-1">
+              <span class="fs-sm">Trusted by Clients from Worldwide</span>
+            </p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-start mb-5 pb-5">
+              <img src="./images/rating.png" class="light-mode-img" width="124" />
+              <img src="./images/rating.png" class="dark-mode-img" width="124" />
+            </div>
+            <div
+              class="position-relative d-inline-flex align-items-center justify-content-center justify-content-md-start mt-auto pt-3 pt-md-4 pb-xl-2">
+              <a href="#section-2" class="btn btn-icon btn-light bg-white stretched-link rounded-circle me-3"
+                data-scroll="" data-scroll-offset="120">
+                <i class="bx bx-chevron-down"></i>
+              </a>
+              <span class="fs-sm">Discover more</span>
+            </div>
+          </div>
+          <div class="col-md-7 align-self-center">
+            <div class="position-relative overflow-hidden mt-0 pb-3 pt-0 mx-auto me-md-0" style="max-width: 512px">
+              <div class="ratio ratio-1x1"></div>
+              <img src="./images/img-1.png" class="rellax position-absolute top-0 start-0 zindex-2" alt="Premium" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="container pt-5 pt-lg-2 pt-xl-5 pb-3 mt-n2 mt-sm-0 mb-2 mb-md-4">
+      <div class="row pb-xl-3 pt-5">
+        <!-- Parallax gfx -->
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="position-relative" style="max-width: 968px">
+            <img src="./images/facebook.png" alt="Premium" style="
+                  max-width: 968px;
+                  margin-left: -180px;
+                  margin-top: -100px;
+                " />
+          </div>
+        </div>
+
+        <!-- Feature list -->
+        <div class="col-lg-7" id="section-2">
+          <div class="typed-animation">
+            <h2 class="h1 text-center text-md-start mb-4 typed-out">
+              Facebook Account
+            </h2>
+          </div>
+
+          <p class="fs-lg text-muted text-center text-md-start mb-4 mb-xl-5">
+            Facebook is gradually changing and it is more difficult and
+            affects each business's Advertising. We have many years of
+            advertising experience and have many ways to overcome all
+            difficulties when customers advertise.
+          </p>
+          <div class="row row-cols-1 row-cols-sm-2 pt-2 pt-sm-3 pt-xl-2">
+            <!-- Item -->
+            <div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
+              <div class="d-flex align-items-start pe-xl-3">
+                <div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
+                  <img src="./Premiumagencyweb_files/happy.svg" alt="Icon" />
+                </div>
+                <div class="ps-4 ps-sm-3 ps-md-4">
+                  <h3 class="h5 pb-1 mb-2">All Product</h3>
+                  <p class="mb-0">
+                    Allow all White hat, light Grey hat products.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
+              <div class="d-flex align-items-start ps-xl-3">
+                <div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
+                  <img src="./Premiumagencyweb_files/cashback.svg" alt="Icon" />
+                </div>
+                <div class="ps-4 ps-sm-3 ps-md-4">
+                  <h3 class="h5 pb-1 mb-2">Refund</h3>
+                  <p class="mb-0">
+                    We will refund amount left when you want stop work with
+                    our ads account.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
+              <div class="d-flex align-items-start pe-xl-3">
+                <div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
+                  <img src="./Premiumagencyweb_files/statistics.svg" alt="Icon" />
+                </div>
+                <div class="ps-4 ps-sm-3 ps-md-4">
+                  <h3 class="h5 pb-1 mb-2">VAT</h3>
+                  <p class="mb-0">ZERO %VAT.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
+              <div class="d-flex align-items-start ps-xl-3">
+                <div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
+                  <img src="./Premiumagencyweb_files/payments.svg" alt="Icon" />
+                </div>
+                <div class="ps-4 ps-sm-3 ps-md-4">
+                  <h3 class="h5 pb-1 mb-2">Unlimited</h3>
+                  <p class="mb-0">
+                    Unlimited spending right after initialization.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
+              <div class="d-flex align-items-start pe-xl-3">
+                <div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
+                  <img src="./Premiumagencyweb_files/security.svg" alt="Icon" />
+                </div>
+                <div class="ps-4 ps-sm-3 ps-md-4">
+                  <h3 class="h5 pb-1 mb-2">Security</h3>
+                  <p class="mb-0">Campaign security, quick top up.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="col pb-2 pb-xl-0 mb-4 mb-xl-5">
+              <div class="d-flex align-items-start ps-xl-3">
+                <div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
+                  <img src="./Premiumagencyweb_files/support.svg" alt="Icon" />
+                </div>
+                <div class="ps-4 ps-sm-3 ps-md-4">
+                  <h3 class="h5 pb-1 mb-2">Contract</h3>
+                  <p class="mb-0">
+                    Free fanpage appeal, have business contract.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands (carousel on screens < 1100px) -->
+    <section class="container pb-5 mt-md-2 mt-lg-4 mb-3">
+      <div class="swiper pt-2 mx-n2 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden"
+        data-swiper-options='{
+          "slidesPerView": 2,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "breakpoints": {
+            "500": {
+              "slidesPerView": 3,
+              "spaceBetween": 8
+            },
+            "650": {
+              "slidesPerView": 4,
+              "spaceBetween": 8
+            },
+            "900": {
+              "slidesPerView": 5,
+              "spaceBetween": 8
+            },
+            "1100": {
+              "slidesPerView": 6,
+              "spaceBetween": 8
+            }
+          }
+        }'>
+        <div class="swiper-wrapper" id="swiper-wrapper-b4163c38a28d46a3" aria-live="polite"
+          style="transform: translate3d(0px, 0px, 0px)">
+          <!-- Item -->
+          <div class="swiper-slide py-3 swiper-slide-active" role="group" aria-label="1 / 6"
+            style="width: 212px; margin-right: 8px">
+            <a href="" class="card card-body card-hover px-2 mx-2">
+              <img src="./brand/01.png" class="d-block mx-auto my-2" width="80" alt="Brand" />
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div class="swiper-slide py-3 swiper-slide-next" role="group" aria-label="2 / 6"
+            style="width: 212px; margin-right: 8px">
+            <a href="" class="card card-body card-hover px-2 mx-2">
+              <img src="./brand/02.png" class="d-block mx-auto my-2" width="80" alt="Brand" />
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div class="swiper-slide py-3" role="group" aria-label="3 / 6" style="width: 212px; margin-right: 8px">
+            <a href="" class="card card-body card-hover px-2 mx-2">
+              <img src="./brand/03.png" class="d-block mx-auto my-2" width="80" alt="Brand" />
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div class="swiper-slide py-3" role="group" aria-label="4 / 6" style="width: 212px; margin-right: 8px">
+            <a href="" class="card card-body card-hover px-2 mx-2">
+              <img src="./brand/04.png" class="d-block mx-auto my-2" width="80" alt="Brand" />
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div class="swiper-slide py-3" role="group" aria-label="5 / 6" style="width: 212px; margin-right: 8px">
+            <a href="" class="card card-body card-hover px-2 mx-2">
+              <img src="./brand/05.png" class="d-block mx-auto my-2" width="80" alt="Brand" />
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div class="swiper-slide py-3" role="group" aria-label="6 / 6" style="width: 212px; margin-right: 8px">
+            <a href="" class="card card-body card-hover px-2 mx-2">
+              <img src="./brand/06.png" class="d-block mx-auto my-2" width="80" alt="Brand" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Pagination (bullets) -->
+        <div
+          class="swiper-pagination position-relative pt-2 mt-4 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock">
+          <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+            aria-label="Go to slide 1" aria-current="true"></span>
+        </div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+      </div>
+
+
+      <video id="plyr-video" poster="thumb.jpg" controls width="100%" height="auto"
+        style="border-radius:20px; overflow: hidden">
+        <source src="Premium_agencysub.mp4" type="video/mp4">
+        <!-- Captions are optional -->
+        <track kind="captions" label="English captions" src="path/to/video-caption.vtt" srclang="en" default>
+      </video>
+      <script>
+    // plyr.setup("#plyr-video");
+      </script>
+
+
+
+
+    </section>
+
+    <!-- Acount -->
+    <section class="position-relative bg-secondary py-5" id="section-account">
+      <div class="container mt-3 pt-md-2 pt-lg-4 pb-2 pb-md-4 pb-lg-5">
+        <h2 class="h1 text-center pb-2 pb-md-0 mb-4 mb-md-5">
+          My services include
+        </h2>
+        <div class="position-relative mx-5">
+          <!-- List Account -->
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a href="#acc-personal" class="nav-link active" data-bs-toggle="tab" role="tab">
+                Personal Ads Account
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#acc-bm" class="nav-link" data-bs-toggle="tab" role="tab">
+                Business Manager
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#acc-fanpage" class="nav-link" data-bs-toggle="tab" role="tab">
+                Fanpage
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#settings1" class="nav-link" data-bs-toggle="tab" role="tab">
+                Profile
+              </a>
+            </li>
+          </ul>
+
+          <!-- Tabs content -->
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="acc-personal" role="tabpanel">
+              <!-- Persional NEW -->
+              <div class="d-flex justify-content-between flex-wrap mt-4">
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Personal account (new)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Limit $50</h5>
+                    <p class="card-text fs-sm">
+                      Never used before, with the ability to change time zone
+                      and currency. Can spend up to $50 USD per day. Regular
+                      spending can increase the limit.
+                    </p>
+                  </div>
+                </div>
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Personal account (new)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Limit $250</h5>
+                    <p class="card-text fs-sm">
+                      Never used before, with the ability to change time zone
+                      and currency. Can spend up to $250 USD per day. Regular
+                      spending can increase the limit.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Personal account (new)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Limit $1500</h5>
+                    <p class="card-text fs-sm">
+                      Never used before, with the ability to change time zone
+                      and currency. Can spend up to $1500 USD per day.
+                    </p>
+                  </div>
+                </div>
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Personal account (new)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">No limit</h5>
+                    <p class="card-text fs-sm">
+                      Never used before, with the ability to change time zone
+                      and currency. Can spend from 5000 usd to unlimited per
+                      day.
+                    </p>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+              <!-- Persional OLD -->
+              <div class="d-flex justify-content-between flex-wrap mt-4">
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Personal account (old)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Limit $50</h5>
+                    <p class="card-text fs-sm">
+                      Used for previous White hat campaigns with many
+                      successful payouts, high reliability and good health.
+                      Can spend up to $50 USD per day. Regular spending can
+                      increase the limit.
+                    </p>
+                  </div>
+                </div>
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Personal account (old)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Limit $250</h5>
+                    <p class="card-text fs-sm">
+                      Used for previous White hat campaigns with many
+                      successful payouts, high reliability and good health.
+                      Can spend up to $250 USD per day. Regular spending can
+                      increase the limit.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Personal account (old)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Limit $1500</h5>
+                    <p class="card-text fs-sm">
+                      Used for previous White hat campaigns with many
+                      successful payouts, high reliability and good health.
+                      Can spend up to $1500 USD per day.
+                    </p>
+                  </div>
+                </div>
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Personal account (old)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">No limit</h5>
+                    <p class="card-text fs-sm">
+                      Used for previous White hat campaigns with many
+                      successful payouts, high reliability and good health.
+                      Can spend from 5000 usd to unlimited per day.
+                    </p>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+            <div class="tab-pane fade" id="acc-bm" role="tabpanel">
+              <!-- Business Manager (normal) -->
+              <div class="d-flex justify-content-between flex-wrap mt-4">
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Business Manager (normal)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Limit $50</h5>
+                    <p class="card-text fs-sm">
+                      Created with reputable profiles, good health, long life.
+                      Can spend up to $50 USD per day. Regular spending can
+                      increase the limit.
+                    </p>
+                  </div>
+                </div>
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Business Manager (normal)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Limit $250</h5>
+                    <p class="card-text fs-sm">
+                      Created with reputable profiles, good health, long life.
+                      Can spend up to $250 USD per day. Regular spending can
+                      increase the limit.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Business Manager (normal)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Limit $1500</h5>
+                    <p class="card-text fs-sm">
+                      Created with reputable profiles, good health, long life.
+                      Can spend up to $1500 USD per day.
+                    </p>
+                  </div>
+                </div>
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Business Manager (normal)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">No limit</h5>
+                    <p class="card-text fs-sm">
+                      Created with reputable profiles, good health, long life.
+                      Can spend from 5000 usd to unlimited per day.
+                    </p>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+              <!-- Business Manager (verified) -->
+              <div class="d-flex justify-content-between flex-wrap mt-4">
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Business Manager (verified)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Limit $50</h5>
+                    <p class="card-text fs-sm">
+                      Verified with Facebook and has a "blue mark," extremely
+                      good health, and is great to use for long-term White hat
+                      and Black hat campaigns. Can spend up to $50 USD per
+                      day. Regular spending can increase the limit.
+                    </p>
+                  </div>
+                </div>
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Business Manager (verified)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Limit $250</h5>
+                    <p class="card-text fs-sm">
+                      Verified with Facebook and has a "blue mark," extremely
+                      good health, and is great to use for long-term White hat
+                      and Black hat campaigns. Can spend up to $250 USD per
+                      day. Regular spending can increase the limit.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Business Manager (verified)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Limit $1500</h5>
+                    <p class="card-text fs-sm">
+                      Verified with Facebook and has a "blue mark," extremely
+                      good health, and is great to use for long-term White hat
+                      and Black hat campaigns. Can spend up to $1500 USD per
+                      day.
+                    </p>
+                  </div>
+                </div>
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Business Manager (verified)
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">No limit</h5>
+                    <p class="card-text fs-sm">
+                      Verified with Facebook and has a "blue mark," extremely
+                      good health, and is great to use for long-term White hat
+                      and Black hat campaigns. Can spend from 5000 usd to
+                      unlimited per day.
+                    </p>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+            <div class="tab-pane fade" id="acc-fanpage" role="tabpanel">
+              <!-- Fanpage -->
+              <div class="d-flex justify-content-between flex-wrap mt-4">
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Fanpage
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">New fanpage</h5>
+                    <p class="card-text fs-sm">
+                      Created on reputable profiles, can be used immediately
+                      and can be renamed, no followers.
+                    </p>
+                  </div>
+                </div>
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>Fanpage
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Old fanpage</h5>
+                    <p class="card-text fs-sm">
+                      Created a long time ago and has long-standing posts, has
+                      a real following.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Secondary card -->
+                <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                      flex-grow: 1;
+                      flex-shrink: 1;
+                      flex-basis: 0;
+                      min-width: 200px;
+                    ">
+                  <div class="card-header">
+                    <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>
+                    Fanpage
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Verified fanpage</h5>
+                    <p class="card-text fs-sm">
+                      Verified with Facebook and has a "blue mark," extremely
+                      good health.
+                    </p>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+            </div>
+            <div class="tab-pane fade" id="settings1" role="tabpanel">
+              <!-- Secondary card -->
+              <div class="card card-hover bg-secondary me-sm-4 mb-4" style="
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                    flex-basis: 0;
+                    min-width: 200px;
+                  ">
+                <div class="card-header">
+                  <i class="bx bxl-facebook-square me-2 fs-4 align-top"></i>
+                  Profile
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Profile</h5>
+                  <p class="card-text fs-sm">
+                    Crafted and cared for by us, in good health, verified for
+                    instant advertising use.
+                  </p>
+                </div>
+              </div>
+
+              <!--  -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Vertical steps PROCESS -->
+
+    <section class="mt-4 pb-5 pt-5" id="section-process">
+      <div class="container pt-1 pt-sm-4 pt-xl-1">
+        <h2 class="h1 text-center pb-2 pb-md-0 mb-5 mb-md-1">Process</h2>
+        <div class="row pt-md-2 pt-lg-1 mt-lg-4">
+          <p class="mx-lg-5 px-lg-5">
+            My services include all thing for run ads : VPS or adspower (clean
+            proxy), strong profile to keep ads account, strong ads account for
+            run ads, Credit card avail in ads acc, we provide page too if you
+            need. you just need care about performance of your ads
+          </p>
+          <div class="col-md-5 d-flex flex-column mt-md-4 pt-5 pb-3 pb-sm-4 py-md-5">
+            <div class="steps">
+              <!-- Step -->
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">1</div>
+                </div>
+                <div class="step-body">
+                  <h5 class="mb-2">Test your ads</h5>
+                  <p class="fs-sm mb-0">
+                    I will test your ads in my ads acc to make sure your ads
+                    work in my ads acc or not.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step -->
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">2</div>
+                </div>
+                <div class="step-body">
+                  <h5 class="mb-2">Prepare Ads Account</h5>
+                  <p class="fs-sm mb-0">
+                    If your ads work in my ads acc. I will prepare ads acc and
+                    show you to check my ads acc.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step -->
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">3</div>
+                </div>
+                <div class="step-body">
+                  <h5 class="mb-2">Payment</h5>
+                  <p class="fs-sm mb-0">
+                    If you don't have problem with my ads acc and want start.
+                    You send money to start.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step -->
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner bg-warning opacity-90">•</div>
+                </div>
+                <div class="step-body">
+                  <h5 class="mb-2">Note</h5>
+                  <p class="fs-sm mb-0">
+                    Campaigns will be checked first to save time for both
+                    parties. You will also be able to check our account first,
+                    just in case someone impersonates us for SCAM.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 align-self-start mt-lg-5">
+            <div class="position-relative overflow-hidden mt-lg-5 mx-auto me-md-0" style="max-width: 600px">
+              <div class="ratio ratio-1x1"></div>
+              <img style="height: 100%" src="./images/timeline.png" class="position-absolute top-0 start-0 zindex-5"
+                alt="Premium" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 mb-md-2" style="
+          background: radial-gradient(
+            116.18% 118% at 50% 100%,
+            rgba(99, 102, 241, 0.1) 0%,
+            rgba(218, 70, 239, 0.05) 41.83%,
+            rgba(241, 244, 253, 0.07) 82.52%
+          );
+        ">
+      <div class="container py-lg-4">
+        <div class="row py-md-3">
+          <div class="col-xl-3 col-lg-4 pt-2">
+            <h2 class="h1 text-center text-lg-start pb-2">
+              Read what Others have to say
+            </h2>
+
+            <!-- Slider prev/next buttons -->
+            <div class="d-flex justify-content-center justify-content-lg-start pt-lg-5">
+              <button type="button" id="prev-review" class="btn btn-prev btn-icon btn-sm me-3" tabindex="0"
+                aria-label="Previous slide" aria-controls="swiper-wrapper-a7cf6bf3653f4dc3">
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <button type="button" id="next-review" class="btn btn-next btn-icon btn-sm" tabindex="0"
+                aria-label="Next slide" aria-controls="swiper-wrapper-a7cf6bf3653f4dc3">
+                <i class="bx bx-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-8 offset-xl-1 pt-4 mt-2 mt-md-3 mt-lg-0 pt-lg-0">
+            <div class="px-2 px-sm-0">
+              <div
+                class="swiper mx-n2 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden"
+                data-swiper-options='{
+                  "slidesPerView": 1,
+                  "spaceBetween": 8,
+                  "navigation": {
+                    "prevEl": "#prev-review",
+                    "nextEl": "#next-review"
+                  },
+                  "loop": true,
+                  "breakpoints": {
+                    "600": { "slidesPerView": 2 }
+                  }
+                }'>
+                <div class="swiper-wrapper" id="swiper-wrapper-a7cf6bf3653f4dc3" aria-live="polite" style="
+                      transition-duration: 0ms;
+                      transform: translate3d(-880px, 0px, 0px);
+                    ">
+                  <div class="swiper-slide h-auto pb-3 px-2 pt-4 swiper-slide-duplicate" data-swiper-slide-index="2"
+                    role="group" aria-label="3 / 4" style="width: 432px; margin-right: 8px">
+                    <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                      <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                        <span
+                          class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                          <i class="bx bxs-quote-left"></i>
+                        </span>
+                        <blockquote class="card-body pb-4 mb-0">
+                          <div class="text-nowrap pt-1 mb-3">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bx-star text-muted opacity-75"></i>
+                          </div>
+                          <p class="fs-lg mb-0">
+                            I've been using this service to rent Facebook ad
+                            accounts for a few months now and I'm thoroughly
+                            impressed. The accounts are always in great
+                            condition, and the customer service team is
+                            fantastic. I've never had any issues with my ads
+                            getting disapproved or my account getting banned.
+                            Highly recommended!
+                          </p>
+                        </blockquote>
+                        <div class="card-footer d-flex align-items-center border-0 pt-0">
+                          <img src="./Premiumagencyweb_files/44.png" width="48" class="rounded-circle ms-n1"
+                            alt="Annette Black" />
+                          <div class="ps-2 ms-1">
+                            <h6 class="fs-base fw-semibold mb-0">
+                              Annette Black
+                            </h6>
+                            <span class="fs-sm text-muted">Project Manager</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide h-auto pb-3 px-2 pt-4 swiper-slide-duplicate swiper-slide-prev"
+                    data-swiper-slide-index="3" role="group" aria-label="4 / 4" style="width: 432px; margin-right: 8px">
+                    <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                      <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                        <span
+                          class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                          <i class="bx bxs-quote-left"></i>
+                        </span>
+                        <blockquote class="card-body pb-4 mb-0">
+                          <div class="text-nowrap pt-1 mb-3">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                          </div>
+                          <p class="fs-lg mb-0">
+                            I was hesitant to try renting a Facebook ad
+                            account at first, but after using this service,
+                            I'm so glad I did. The account was set up quickly,
+                            and the ads have been performing great. The team
+                            was also very responsive to any questions I had,
+                            which made the whole experience very smooth.
+                          </p>
+                        </blockquote>
+                        <div class="card-footer d-flex align-items-center border-0 pt-0">
+                          <img src="./Premiumagencyweb_files/45.png" width="48" class="rounded-circle ms-n1"
+                            alt="Jerome Bell" />
+                          <div class="ps-2 ms-1">
+                            <h6 class="fs-base fw-semibold mb-0">
+                              Jerome Bell
+                            </h6>
+                            <span class="fs-sm text-muted">Developer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto pt-4 pb-3 px-2 swiper-slide-active" data-swiper-slide-index="0"
+                    role="group" aria-label="1 / 4" style="width: 432px; margin-right: 8px">
+                    <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                      <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                        <span
+                          class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                          <i class="bx bxs-quote-left"></i>
+                        </span>
+                        <blockquote class="card-body pb-4 mb-0">
+                          <div class="text-nowrap pt-1 mb-3">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bx-star text-muted opacity-75"></i>
+                          </div>
+                          <p class="fs-lg mb-0">
+                            I've used a few different services for renting
+                            Facebook ad accounts in the past, but this is by
+                            far the best. The accounts are always in good
+                            standing, and the team is very knowledgeable about
+                            Facebook's policies and guidelines. I feel
+                            confident knowing that my ads are being run on a
+                            reliable account.
+                          </p>
+                        </blockquote>
+                        <div class="card-footer d-flex align-items-center border-0 pt-0">
+                          <img src="./Premiumagencyweb_files/42.png" width="48" class="rounded-circle ms-n1"
+                            alt="Fannie Summers" />
+                          <div class="ps-2 ms-1">
+                            <h6 class="fs-base fw-semibold mb-0">
+                              Fannie Summers
+                            </h6>
+                            <span class="fs-sm text-muted">Designer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto pb-3 px-2 pt-4 swiper-slide-next" data-swiper-slide-index="1"
+                    role="group" aria-label="2 / 4" style="width: 432px; margin-right: 8px">
+                    <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                      <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                        <span
+                          class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                          <i class="bx bxs-quote-left"></i>
+                        </span>
+                        <blockquote class="card-body pb-4 mb-0">
+                          <div class="text-nowrap pt-1 mb-3">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                          </div>
+                          <p class="fs-lg mb-0">
+                            I've been running Facebook ads for my business for
+                            a while now, and renting an account from this
+                            service has been a game-changer. The ads are
+                            performing better than ever, and the customer
+                            service is exceptional. I appreciate that they
+                            take the time to understand my business goals and
+                            offer personalized recommendations for my ad
+                            campaigns.
+                          </p>
+                        </blockquote>
+                        <div class="card-footer d-flex align-items-center border-0 pt-0">
+                          <img src="./Premiumagencyweb_files/43.png" width="48" class="rounded-circle ms-n1"
+                            alt="Robert Fox" />
+                          <div class="ps-2 ms-1">
+                            <h6 class="fs-base fw-semibold mb-0">
+                              Robert Fox
+                            </h6>
+                            <span class="fs-sm text-muted">QA Engineer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto pb-3 px-2 pt-4" data-swiper-slide-index="2" role="group"
+                    aria-label="3 / 4" style="width: 432px; margin-right: 8px">
+                    <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                      <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                        <span
+                          class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                          <i class="bx bxs-quote-left"></i>
+                        </span>
+                        <blockquote class="card-body pb-4 mb-0">
+                          <div class="text-nowrap pt-1 mb-3">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bx-star text-muted opacity-75"></i>
+                          </div>
+                          <p class="fs-lg mb-0">
+                            I was struggling to get my Facebook ads approved
+                            due to some issues with my personal account, but
+                            this service came to the rescue. The team was able
+                            to set me up with a rented ad account quickly and
+                            efficiently, and my ads have been running smoothly
+                            ever since. I'm grateful for their expertise and
+                            support, and I would definitely recommend them to
+                            anyone facing similar challenges.
+                          </p>
+                        </blockquote>
+                        <div class="card-footer d-flex align-items-center border-0 pt-0">
+                          <img src="./Premiumagencyweb_files/44.png" width="48" class="rounded-circle ms-n1"
+                            alt="Annette Black" />
+                          <div class="ps-2 ms-1">
+                            <h6 class="fs-base fw-semibold mb-0">
+                              Annette Black
+                            </h6>
+                            <span class="fs-sm text-muted">Project Manager</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto pb-3 px-2 pt-4 swiper-slide-duplicate-prev"
+                    data-swiper-slide-index="3" role="group" aria-label="4 / 4" style="width: 432px; margin-right: 8px">
+                    <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                      <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                        <span
+                          class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                          <i class="bx bxs-quote-left"></i>
+                        </span>
+                        <blockquote class="card-body pb-4 mb-0">
+                          <div class="text-nowrap pt-1 mb-3">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                          </div>
+                          <p class="fs-lg mb-0">
+                            I'm glad I used this service to rent a Facebook ad
+                            account. The team provided an efficient solution
+                            that allowed me to run my ads without having my
+                            own ad account. Their customer service is also
+                            excellent, with very prompt replies.
+                          </p>
+                        </blockquote>
+                        <div class="card-footer d-flex align-items-center border-0 pt-0">
+                          <img src="./Premiumagencyweb_files/45.png" width="48" class="rounded-circle ms-n1"
+                            alt="Jerome Bell" />
+                          <div class="ps-2 ms-1">
+                            <h6 class="fs-base fw-semibold mb-0">
+                              Jerome Bell
+                            </h6>
+                            <span class="fs-sm text-muted">Developer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide h-auto pt-4 pb-3 px-2 swiper-slide-duplicate swiper-slide-duplicate-active"
+                    data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 432px; margin-right: 8px">
+                    <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                      <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                        <span
+                          class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                          <i class="bx bxs-quote-left"></i>
+                        </span>
+                        <blockquote class="card-body pb-4 mb-0">
+                          <div class="text-nowrap pt-1 mb-3">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bx-star text-muted opacity-75"></i>
+                            <i class="bx bx-star text-muted opacity-75"></i>
+                          </div>
+                          <p class="fs-lg mb-0">
+                            I've used this service multiple times now, and
+                            each time I've been very satisfied. The rented
+                            accounts are of high quality, and the team is very
+                            professional. I've never encountered any issues,
+                            and my ads have performed very well.
+                          </p>
+                        </blockquote>
+                        <div class="card-footer d-flex align-items-center border-0 pt-0">
+                          <img src="./Premiumagencyweb_files/42.png" width="48" class="rounded-circle ms-n1"
+                            alt="Fannie Summers" />
+                          <div class="ps-2 ms-1">
+                            <h6 class="fs-base fw-semibold mb-0">
+                              Fannie Summers
+                            </h6>
+                            <span class="fs-sm text-muted">Designer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide h-auto pb-3 px-2 pt-4 swiper-slide-duplicate swiper-slide-duplicate-next"
+                    data-swiper-slide-index="1" role="group" aria-label="2 / 4" style="width: 432px; margin-right: 8px">
+                    <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                      <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                        <span
+                          class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                          <i class="bx bxs-quote-left"></i>
+                        </span>
+                        <blockquote class="card-body pb-4 mb-0">
+                          <div class="text-nowrap pt-1 mb-3">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                          </div>
+                          <p class="fs-lg mb-0">
+                            This was my first time renting a Facebook ad
+                            account, but this service made the whole process
+                            very smooth. Their team was very professional,
+                            explaining all the steps to me and providing
+                            support throughout the process. I highly recommend
+                            this service to anyone who needs to rent an ad
+                            account.
+                          </p>
+                        </blockquote>
+                        <div class="card-footer d-flex align-items-center border-0 pt-0">
+                          <img src="./Premiumagencyweb_files/43.png" width="48" class="rounded-circle ms-n1"
+                            alt="Robert Fox" />
+                          <div class="ps-2 ms-1">
+                            <h6 class="fs-base fw-semibold mb-0">
+                              Robert Fox
+                            </h6>
+                            <span class="fs-sm text-muted">QA Engineer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="container py-5 mb-lg-2" id="section-faq">
+      <div class="row py-2 py-md-4 py-lg-5">
+        <div class="col-xl-4 col-md-5 text-center text-md-start pt-md-2 pb-2 pb-md-0 mb-4 mb-md-0">
+          <h2 class="pb-3 mb-1 mb-lg-3">
+            Any questions? <br class="d-none d-md-inline" />Check out the FAQs
+          </h2>
+          <p class="fs-lg pb-3 mb-2 mb-lg-3">
+            Still have unanswered questions and need to get in touch?
+          </p>
+          <div class="row row-cols-1 row-cols-sm-2 g-3 g-sm-4">
+            <div class="col">
+              <div class="card card-hover">
+                <div class="card-body pb-3">
+                  <i class="bx bxs-phone-call d-block fs-2 text-primary mb-2 py-1"></i>
+                  <p class="fs-sm mb-2">Still have questions?</p>
+                  <a href="https://join.skype.com/invite/YgC6pwCdRSKL" class="btn btn-link stretched-link px-0"
+                    target="_blank">
+                    <i class="bx bxl-skype me-1"></i>Call us
+                    <i class="bx bx-right-arrow-alt fs-xl ms-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-hover">
+                <div class="card-body pb-3">
+                  <i class="bx bx-message-rounded-dots d-block fs-2 text-success mb-2 py-1"></i>
+                  <p class="fs-sm mb-2">Still have questions?</p>
+                  <a href="#section-contact" class="btn btn-link text-success stretched-link px-0" data-scroll
+                    data-scroll-offset="120">
+                    <i class="bx bxl-telegram me-1"></i>Chat with us
+                    <i class="bx bx-right-arrow-alt fs-xl ms-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 offset-xl-1">
+          <div class="accordion" id="faq">
+            <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+              <h2 class="accordion-header" id="q1-heading">
+                <button class="accordion-button shadow-none rounded-3" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#q1" aria-expanded="true" aria-controls="q1">
+                  Can your account run Black Hat and Gray Hat campaigns?
+                </button>
+              </h2>
+              <div id="q1" class="accordion-collapse collapse show" aria-labelledby="q1-heading" data-bs-parent="#faq">
+                <div class="accordion-body fs-sm pt-0">
+                  <p>
+                    Yes, your account can be used for Black Hat and Grey Hat
+                    campaigns.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+              <h2 class="accordion-header" id="q2-heading">
+                <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#q2" aria-expanded="false" aria-controls="q2">
+                  What types of accounts do you provide?
+                </button>
+              </h2>
+              <div id="q2" class="accordion-collapse collapse" aria-labelledby="q2-heading" data-bs-parent="#faq">
+                <div class="accordion-body fs-sm pt-0">
+                  <p>
+                    We provide all account types: Personal accounts with
+                    spending history, BM accounts and agency accounts.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+              <h2 class="accordion-header" id="q3-heading">
+                <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#q3" aria-expanded="false" aria-controls="q3">
+                  What happens when the account is locked? Can the money in
+                  that account be transferred to the new account?
+                </button>
+              </h2>
+              <div id="q3" class="accordion-collapse collapse" aria-labelledby="q3-heading" data-bs-parent="#faq">
+                <div class="accordion-body fs-sm pt-0">
+                  <p>
+                    When the account is locked, our staff will provide you
+                    with a new account completely free of charge.
+                  </p>
+                  <p class="mb-0">
+                    The balance in the old account will be transferred to the
+                    new account. This applies to both profile accounts and
+                    page accounts.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+              <h2 class="accordion-header" id="q4-heading">
+                <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#q4" aria-expanded="false" aria-controls="q4">
+                  What is your account limit?
+                </button>
+              </h2>
+              <div id="q4" class="accordion-collapse collapse" aria-labelledby="q4-heading" data-bs-parent="#faq">
+                <div class="accordion-body fs-sm pt-0">
+                  <p>
+                    Our account has spending limits of $1500, 250 and nolimit
+                    daily.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+              <h2 class="accordion-header" id="q5-heading">
+                <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#q5" aria-expanded="false" aria-controls="q5">
+                  How do I use your account?
+                </button>
+              </h2>
+              <div id="q5" class="accordion-collapse collapse" aria-labelledby="q5-heading" data-bs-parent="#faq">
+                <div class="accordion-body fs-sm pt-0">
+                  <p>
+                    We set up everything and ad accounts in VPS, RDP or
+                    Adspower.
+                  </p>
+                  <p class="mb-0">
+                    You will be granted access to these software to control
+                    and use our account.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+              <h2 class="accordion-header" id="q6-heading">
+                <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#q6" aria-expanded="false" aria-controls="q6">
+                  Which payment method do you use?
+                </button>
+              </h2>
+              <div id="q6" class="accordion-collapse collapse" aria-labelledby="q6-heading" data-bs-parent="#faq">
+                <div class="accordion-body fs-sm pt-0">
+                  <p>We use USDT ,BTC, Payoneer for payment.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Q7 -->
+            <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+              <h2 class="accordion-header" id="q7-heading">
+                <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#q7" aria-expanded="false" aria-controls="q7">
+                  How to top up your account?
+                </button>
+              </h2>
+              <div id="q7" class="accordion-collapse collapse" aria-labelledby="q7-heading" data-bs-parent="#faq">
+                <div class="accordion-body fs-sm pt-0">
+                  <p>
+                    You send us money after checking our account. Then our
+                    staff will activate the account for you to use.
+                  </p>
+                  <p class="mb-0">
+                    When your deposit has almost been spent, our staff will
+                    notify you to deposit more so that your campaign will not
+                    be interrupted.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Q8 -->
+            <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+              <h2 class="accordion-header" id="q8-heading">
+                <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#q8" aria-expanded="false" aria-controls="q8">
+                  What is your refund process?
+                </button>
+              </h2>
+              <div id="q8" class="accordion-collapse collapse" aria-labelledby="q8-heading" data-bs-parent="#faq">
+                <div class="accordion-body fs-sm pt-0">
+                  <p>
+                    When you want to stop cooperation. Your support staff will
+                    stop the campaign and aggregate your spending, calculate
+                    the balance and confirm the balance with you.
+                  </p>
+                  <p class="mb-0">
+                    If there are no problems, the request will be forwarded to
+                    the accounting department for completion. This process
+                    will take 1-2 days.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Q9 -->
+            <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+              <h2 class="accordion-header" id="q9-heading">
+                <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#q9" aria-expanded="false" aria-controls="q9">
+                  What is the service fee?
+                </button>
+              </h2>
+              <div id="q9" class="accordion-collapse collapse" aria-labelledby="q9-heading" data-bs-parent="#faq">
+                <div class="accordion-body fs-sm pt-0">
+                  <p>
+                    We charge a service fee. This fee is 8-12% for White hat
+                    campaigns and 10-12% for Black hat campaigns.
+                  </p>
+                  <p class="mb-0">
+                    This fee may change if you spend well and stably.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Q10 -->
+            <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+              <h2 class="accordion-header" id="q10-heading">
+                <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#q10" aria-expanded="false" aria-controls="q10">
+                  What is the minimum spend to use your service?
+                </button>
+              </h2>
+              <div id="q10" class="accordion-collapse collapse" aria-labelledby="q10-heading" data-bs-parent="#faq">
+                <div class="accordion-body fs-sm pt-0">
+                  <p>$100 is the minimum spent on our account.</p>
+                  <p class="mb-0">
+                    You can test campaigns with a smaller budget, but you need
+                    to make sure to scale them after testing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="container" id="section-contact">
+      <div class="bg-secondary rounded-3 py-5 px-3 px-sm-4 px-lg-5 px-xl-0">
+        <div class="row align-items-center py-lg-4">
+          <div class="col-xl-6 col-md-6 offset-xl-1 mb-4 mb-md-0">
+            <div class="d-flex align-items-center">
+              <img src="./svg/contact.svg" width="78" alt="Bell icon" />
+              <div class="ps-3 ms-sm-3">
+                <h2 class="h4 mb-0">
+                  Contact us immediately to receive special offers and
+                  thoughtful support
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <!-- Modal with tabs and forms -->
+            <!-- Text input -->
+            <div class="d-block align-items-center" style="padding: auto; margin: auto">
+              <a href="contact.html" class="btn btn-primary btn-sm fs-sm rounded d-block" data-scroll
+                data-scroll-offset="120">
+                <i class="bx bx-chat fs-5 lh-1 me-1"></i>
+                &nbsp;Leave a message
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="d-flex flex-row justify-content-around flex-wrap">
+            <!-- Telegram 1 -->
+            <a href="https://t.me/jonyliu" target="_blank" class="text-decoration-none mb-3 d-block flex-grow-1">
+              <div class="btn btn-outline-info d-flex flex-column p-0" type="button" style="
+                    height: 110px;
+                    min-width: 150px;
+                    max-width: 200px;
+                    margin: auto;
+                    border-radius: 12px !important;
+                  ">
+                <div class="contact-header d-flex flex-row justify-content-start">
+                  <i class="bx bxl-telegram me-2 ms-2 align-middle fs-6"></i>
+                  <span class="" style="font-size: 11px">Telegram</span>
+                  <div class="flex-fill"></div>
+                </div>
+                <div class="contact-body my-2">
+                  <span class="fs-6" style="color: #fff">jony Liu </span>
+                  <svg height="23" viewBox="0 2 24 24" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Layer_2" data-name="Layer 2">
+                      <path
+                        d="m19.36 9v-2.36a2 2 0 0 0 -2-2h-2.31l-1.64-1.64a2 2 0 0 0 -2.82 0l-1.59 1.64h-2.36a2 2 0 0 0 -2 2v2.36l-1.64 1.59a2 2 0 0 0 0 2.82l1.64 1.64v2.31a2 2 0 0 0 2 2h2.36l1.59 1.64a2 2 0 0 0 2.82 0l1.64-1.64h2.31a2 2 0 0 0 2-2v-2.31l1.64-1.64a2 2 0 0 0 0-2.82z"
+                        fill="#2196f3" />
+                      <path
+                        d="m11.25 14.5a1 1 0 0 1 -.71-.29l-1.54-1.5a1 1 0 0 1 1.42-1.42l.79.8 2.29-2.3a1 1 0 0 1 1.5 1.42l-3 3a1 1 0 0 1 -.75.29z"
+                        fill="#fff" />
+                    </g>
+                  </svg>
+                </div>
+                <div class="contact-footer">
+                  <i class="bx bx-chat"></i>
+                </div>
+              </div>
+            </a>
+            <!-- Telegram 2 -->
+            <a href="https://t.me/Petter_Ly" target="_blank" class="text-decoration-none mb-3 d-block flex-grow-1">
+              <div class="btn btn-outline-info d-flex flex-column p-0" type="button" style="
+                    height: 110px;
+                    min-width: 150px;
+                    max-width: 200px;
+                    margin: auto;
+                    border-radius: 12px !important;
+                  ">
+                <div class="contact-header d-flex flex-row justify-content-start mb-2">
+                  <i class="bx bxl-telegram me-2 ms-2 align-middle fs-6"></i>
+                  <span class="" style="font-size: 11px">Telegram</span>
+                  <div class="flex-fill"></div>
+                </div>
+                <div class="contact-body my-2">
+                  <span class="fs-6" style="color: #fff">Petter Ly</span>
+                  <svg height="23" viewBox="0 2 24 24" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Layer_2" data-name="Layer 2">
+                      <path
+                        d="m19.36 9v-2.36a2 2 0 0 0 -2-2h-2.31l-1.64-1.64a2 2 0 0 0 -2.82 0l-1.59 1.64h-2.36a2 2 0 0 0 -2 2v2.36l-1.64 1.59a2 2 0 0 0 0 2.82l1.64 1.64v2.31a2 2 0 0 0 2 2h2.36l1.59 1.64a2 2 0 0 0 2.82 0l1.64-1.64h2.31a2 2 0 0 0 2-2v-2.31l1.64-1.64a2 2 0 0 0 0-2.82z"
+                        fill="#2196f3" />
+                      <path
+                        d="m11.25 14.5a1 1 0 0 1 -.71-.29l-1.54-1.5a1 1 0 0 1 1.42-1.42l.79.8 2.29-2.3a1 1 0 0 1 1.5 1.42l-3 3a1 1 0 0 1 -.75.29z"
+                        fill="#fff" />
+                    </g>
+                  </svg>
+                </div>
+                <div class="contact-footer">
+                  <i class="bx bx-chat"></i>
+                </div>
+              </div>
+            </a>
+            <!-- Telegram -->
+            <a href="https://t.me/Premium_Agency" target="_blank" class="text-decoration-none mb-3" style="">
+              <div class="btn btn-outline-info d-flex flex-column p-0" type="button" style="
+                    height: 110px;
+                    min-width: 150px;
+                    max-width: 200px;
+                    margin: auto;
+                    border-radius: 12px !important;
+                  ">
+                <div class="contact-header d-flex flex-row justify-content-center w-100 mb-0">
+                  <i class="bx bxl-telegram me-2 ms-2 align-middle fs-1"></i>
+                </div>
+                <div class="contact-body my-1" style="">
+                  <span class="" style="font-size: 11px">Telegram channel</span>
+                </div>
+              </div>
+            </a>
+            <!-- Whatsapp -->
+            <a href="https://api.whatsapp.com/send/?phone=84985786542&text&type=phone_number&app_absent=0"
+              target="_blank" class="text-decoration-none mb-3" style="">
+              <div class="btn btn-outline-success d-flex flex-column p-0" type="button" style="
+                    height: 110px;
+                    min-width: 150px;
+                    max-width: 200px;
+                    margin: auto;
+                    border-radius: 12px !important;
+                  ">
+                <div class="contact-header d-flex flex-row justify-content-center w-100 mb-0">
+                  <i class="bx bxl-whatsapp me-2 ms-2 align-middle fs-1"></i>
+                </div>
+                <div class="contact-body my-1" style="">
+                  <span class="" style="font-size: 11px">Whatsapp</span>
+                </div>
+              </div>
+            </a>
+            <a href="https://join.skype.com/invite/YgC6pwCdRSKL" target="_blank" class="text-decoration-none" style="">
+              <div class="btn btn-outline-info d-flex flex-column p-0" type="button" style="
+                    height: 110px;
+                    min-width: 150px;
+                    max-width: 200px;
+                    margin: auto;
+                    border-radius: 12px !important;
+                  ">
+                <div class="contact-header d-flex flex-row justify-content-center w-100 mb-0">
+                  <i class="bx bxl-skype me-2 ms-2 align-middle fs-1"></i>
+                </div>
+                <div class="contact-body my-1" style="">
+                  <span class="" style="font-size: 11px">Skype</span>
+                </div>
+                <div class="contact-footer"></div>
+              </div>
+            </a>
+            <!-- End -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer pt-5 pb-4 pb-lg-5">
+    <div class="container text-center pt-lg-3">
+      <div class="navbar-brand justify-content-center text-dark mb-2 mb-lg-4">
+        <img src="./svg/Premium-Agency-logo.svg" class="me-2" width="160" alt="Silicon" />
+      </div>
+      <ul class="nav justify-content-center pt-3 pb-4 pb-lg-5">
+        <li class="nav-item">
+          <a href="#section-home" class="nav-link" data-scroll data-scroll-offset="0">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#section-account" class="nav-link" data-scroll data-scroll-offset="60">Account</a>
+        </li>
+        <li class="nav-item">
+          <a href="#section-process" class="nav-link" data-scroll data-scroll-offset="60">Process</a>
+        </li>
+        <li class="nav-item">
+          <a href="#section-faq" class="nav-link" data-scroll data-scroll-offset="30">Questions</a>
+        </li>
+      </ul>
+
+      <div class="d-flex justify-content-center pt-4 mt-lg-3">
+        <a href="" class="btn btn-icon btn-secondary btn-facebook mx-2">
+          <i class="bx bxl-facebook"></i>
+        </a>
+        <a href="" class="btn btn-icon btn-secondary btn-instagram mx-2">
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="" class="btn btn-icon btn-secondary btn-twitter mx-2">
+          <i class="bx bxl-twitter"></i>
+        </a>
+        <a href="" class="btn btn-icon btn-secondary btn-youtube mx-2">
+          <i class="bx bxl-youtube"></i>
+        </a>
+      </div>
+      <p class="nav d-block fs-sm text-center pt-5 mt-lg-4 mb-0">
+        <span class="opacity-80">
+          © Premium Agency • All rights reserved.</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <a href="#top" class="btn-scroll-top" data-scroll="">
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+  </a>
+
+  <!-- Vendor Scripts -->
+  <script src="./Premiumagencyweb_files/bootstrap.bundle.min.js"></script>
+  <script src="./Premiumagencyweb_files/smooth-scroll.polyfills.min.js"></script>
+  <script src="./Premiumagencyweb_files/rellax.min.js"></script>
+  <script src="./Premiumagencyweb_files/swiper-bundle.min.js"></script>
+
+  <!-- Main Theme Script -->
+  <script src="./Premiumagencyweb_files/theme.min.js"></script>
+  <script src="2.0.15/plyr.js"></script>
+  <link rel="stylesheet" href="2.0.15/plyr.css">
+</body>
+</html>
